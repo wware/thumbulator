@@ -1,5 +1,5 @@
 
-ARMGNU = arm-none-eabi
+ARMGNU = arm-elf
 
 AOPS = --warn --fatal-warnings
 COPS = -mthumb -mcpu=arm7tdmi -march=armv4t -Wall -Werror -Os -nostdlib -nostartfiles -nodefaultlibs -nostdlib -ffreestanding

@@ -1,6 +1,6 @@
 
 
-ARMGNU = arm-none-linux-gnueabi
+ARMGNU = arm-elf
 
 COPS = -Wall -O2 -mthumb -nostdlib -nostartfiles -ffreestanding 
 
@@ -9,7 +9,7 @@ AOPS = --warn --fatal-warnings
 all : vcflags tvcflags.bin
 
 vcflags : vcflags.c someasm.s
-	arm-none-linux-gnueabi-gcc vcflags.c someasm.s -o vcflags
+	arm-elf-gcc vcflags.c someasm.s -o vcflags
 
 
 tvcflags.bin : vectors.s putget.s tvcflags.c 

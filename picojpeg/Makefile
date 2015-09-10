@@ -25,8 +25,8 @@ clean :
 
 
 
-#ARMGNU = arm-none-linux-gnueabi
-ARMGNU = arm-none-eabi
+#ARMGNU = arm-elf
+ARMGNU = arm-elf
 
 COPS = -Wall -O3 -mthumb -nostdlib -nostartfiles -ffreestanding 
 AOPS = --warn --fatal-warnings
